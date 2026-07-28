@@ -7,7 +7,7 @@ A responsive, dynamic, and dark-themed portfolio website built using vanilla **H
 ## 🔗 Live Demo & Links
 
 * **Live Demo:** https://l1s23bscs0119.github.io/Portfolio/
-* **GitHub Repository:** [Insert your GitHub repo link here]
+* **GitHub Repository:** https://github.com/L1S23BSCS0119/Portfolio
 * **Google Skills Public Profile:** [View Profile](https://www.skills.google/public_profiles/75b092f4-376c-4e23-a4fa-376bfd36d8ab)
 
 ---
