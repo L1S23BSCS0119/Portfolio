@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faiqa Abid | Full Stack & AI Developer</title>
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Floating Canvas Background -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">&lt;FaiqaAbid /&gt;</div>
+    
+    <!-- Mobile Menu Hamburger Button -->
+    <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="about">
+    <div class="hero-content">
+      <span class="badge">Available for Software Engineering Roles</span>
+      <h1>Faiqa Abid</h1>
+      <p class="tagline">Full Stack & Frontend Developer | AI & Data Analytics Enthusiast</p>
+
+      <!-- Scaled Interactive Terminal Console -->
+      <div class="terminal-box">
+        <div class="terminal-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">faiqa@dev-workstation:~</span>
+        </div>
+        <div class="terminal-body">
+          <div id="terminal-output">
+            Type <span class="highlight">'help'</span> or <span class="highlight">'skills'</span> to execute commands...
+          </div>
+          <div class="terminal-input-line">
+            <span class="prompt">$</span>
+            <input type="text" id="terminal-input" placeholder="type a command..." autofocus />
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Featured Projects Showcase Section -->
+  <section class="section" id="projects">
+    <h2 class="section-title">&lt; Featured Projects /&gt;</h2>
+    <div class="projects-grid">
+
+      <!-- Project 1: Credit Card Fraud Detection -->
+      <div class="tilt-card" data-tilt>
+        <div class="card-header">
+          <span class="card-tag">AI / Full-Stack</span>
+        </div>
+        <h3>Credit Card Fraud Detection System</h3>
+        <p>End-to-end fraud platform featuring Random Forest ensembles, SMOTE oversampling pipeline, real-time sub-second FastAPI backend, and React dashboard.</p>
+        <div class="tech-stack">
+          <span>React</span><span>FastAPI</span><span>Python</span><span>Random Forest</span><span>SMOTE</span>
+        </div>
+      </div>
+
+      <!-- Project 3: Mental Health App Prototype (Added) -->
+      <div class="tilt-card" data-tilt>
+        <div class="card-header">
+          <span class="card-tag">UI/UX Design & Prototyping</span>
+        </div>
+        <h3>Mental Health App Prototype</h3>
+        <p>Designed an interactive Figma prototype for a Mental Health App, focusing on modern UI/UX principles, user journey planning, and seamless screen navigation.</p>
+        <div class="tech-stack">
+          <span>Figma</span><span>UI/UX Design</span><span>Interactive Prototyping</span><span>User Journey</span>
+        </div>
+      </div>
+
+      <!-- Project 4: Cookbook Mobile App -->
+      <div class="tilt-card" data-tilt>
+        <div class="card-header">
+          <span class="card-tag">Mobile App & Design</span>
+        </div>
+        <h3>Cookbook Mobile App</h3>
+        <p>Built a functional cookbook application and comprehensive interactive UI/UX frontend prototypes utilizing MIT App Inventor.</p>
+        <div class="tech-stack">
+          <span>MIT App Inventor</span><span>UI/UX Design</span><span>Prototyping</span><span>Frontend</span>
+        </div>
+      </div>
+
+      <!-- Project 5: Spotify Prediction -->
+      <div class="tilt-card" data-tilt>
+        <div class="card-header">
+          <span class="card-tag">Machine Learning</span>
+        </div>
+        <h3>Spotify Hit Song Prediction</h3>
+        <p>ML pipeline predicting song hits with 85.6% accuracy using Decision Tree and Random Forest models across 10,000+ tracks.</p>
+        <div class="tech-stack">
+          <span>Python</span><span>Pandas</span><span>Scikit-Learn</span><span>Seaborn</span>
+        </div>
+      </div>
+
+      <!-- Project 6: ReadSmart AWS -->
+      <div class="tilt-card" data-tilt>
+        <div class="card-header">
+          <span class="card-tag">Cloud / AWS</span>
+        </div>
+        <h3>ReadSmart Cloud Bookstore</h3>
+        <p>Scalable online bookstore deployment demonstrating cloud infrastructure, high availability, and AWS cloud hosting setup.</p>
+        <div class="tech-stack">
+          <span>AWS</span><span>Cloud Architecture</span><span>Web Hosting</span>
+        </div>
+      </div>
+
+      <!-- Project 7: Smart Campus Network -->
+      <div class="tilt-card" data-tilt>
+        <div class="card-header">
+          <span class="card-tag">Cybersecurity & Networking</span>
+        </div>
+        <h3>Smart Campus Enterprise Network</h3>
+        <p>Designed a multi-branch secure enterprise network using OSPF routing, VLAN segmentation, and ACL traffic filtering in Cisco Packet Tracer.</p>
+        <div class="tech-stack">
+          <span>Cisco Packet Tracer</span><span>OSPF</span><span>VLANs</span><span>ACLs</span>
+        </div>
+      </div>
+
+      <!-- Project 8: Trie Data Structure & Library -->
+      <div class="tilt-card" data-tilt>
+        <div class="card-header">
+          <span class="card-tag">Systems & Algorithms</span>
+        </div>
+        <h3>Optimized Trie Engine & Library Management System</h3>
+        <p>Custom C++ Trie data structure supporting fast prefix search, optimized string retrieval, and an OOP-based Library System.</p>
+        <div class="tech-stack">
+          <span>C++</span><span>DSA</span><span>OOP</span>
+        </div>
+      </div>
+
+      <!-- Project 9: C++ Matrix Operations (Added) -->
+      <div class="tilt-card" data-tilt>
+        <div class="card-header">
+          <span class="card-tag">C++ & Mathematics</span>
+        </div>
+        <h3>C++ Matrix Operations Engine</h3>
+        <p>Matrix Operations program in C++ capable of performing addition, subtraction, multiplication, and basic matrix computations demonstrating understanding of 2D arrays, loops, and logic.</p>
+        <div class="tech-stack">
+          <span>C++</span><span>2D Arrays</span><span>Mathematical Logic</span><span>Algorithms</span>
+        </div>
+      </div>
+
+       <!-- Project 2: FYP Secure Prompting -->
+      <div class="tilt-card" data-tilt>
+        <div class="card-header">
+          <span class="card-tag">Full-Stack / AI • Ongoing FYP</span>
+        </div>
+        <h3>Secure Prompting & Avatar Learning Platform</h3>
+        <p>Layered client-server architecture integrating DistilBERT classifier, FastAPI, and React for avatar-guided simulation learning.</p>
+        <div class="tech-stack">
+          <span>React</span><span>FastAPI</span><span>DistilBERT</span><span>Python</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+   
+
+  <!-- Research Experience Section -->
+  <section class="section" id="research">
+    <h2 class="section-title">&lt; Research & Publications /&gt;</h2>
+    <div class="research-grid">
+      
+      <!-- Research Item 1 -->
+      <div class="research-card">
+        <div class="research-status-badge">Ongoing</div>
+        <div class="research-content">
+          <h3>Data Poisoning Attacks on Fine-tuned LLMs</h3>
+          <p class="research-meta"><i class="fa-solid fa-users"></i> Author (2-member team)</p>
+          <p class="research-desc">Investigating security vulnerabilities in fine-tuned Large Language Models, focusing on data poisoning attack vectors and evaluating classifier model reliability.</p>
+          <div class="tech-stack">
+            <span>LLMs</span><span>DistilBERT</span><span>Adversarial ML</span><span>Model Security</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Research Item 2 -->
+      <div class="research-card">
+        <div class="research-status-badge completed">Completed</div>
+        <div class="research-content">
+          <h3>Optimizing Edge-Cloud RAG for Industrial IoT</h3>
+          <p class="research-meta"><i class="fa-solid fa-users"></i> Co-author (3-member team)</p>
+          <p class="research-desc">Researching Retrieval-Augmented Generation (RAG) frameworks with on-premise vector cache coherency tailored for low-latency Industrial IoT environments.</p>
+          <div class="tech-stack">
+            <span>RAG</span><span>Edge-Cloud</span><span>Vector Cache</span><span>IIoT</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Licenses & Certifications Section -->
+  <section class="section" id="certifications">
+    <h2 class="section-title">&lt; Licenses & Certifications /&gt;</h2>
+    
+    <!-- Google Skills Profile Highlight Banner -->
+    <div class="google-profile-card">
+      <div class="profile-card-content">
+        <div class="profile-card-icon"><i class="fa-brands fa-google"></i></div>
+        <div class="profile-card-text">
+          <h3>Google Skills Public Profile</h3>
+          <p>Explore all completed Google Cloud skill badges, course credentials, and technical achievements.</p>
+        </div>
+      </div>
+      <a href="https://www.skills.google/public_profiles/75b092f4-376c-4e23-a4fa-376bfd36d8ab" target="_blank" rel="noopener noreferrer" class="view-profile-btn">
+        View Profile <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </a>
+    </div>
+
+    <div class="certs-grid">
+
+      <!-- AWS Certification -->
+      <div class="cert-card">
+        <div class="cert-icon"><i class="fa-brands fa-aws"></i></div>
+        <div class="cert-info">
+          <h3>AWS Academy Graduate</h3>
+          <p class="cert-issuer">Amazon Web Services • Cloud Foundations</p>
+          <span class="cert-date"><i class="fa-regular fa-calendar"></i> Issued Jan 2026</span>
+          <a href="https://www.credly.com/badges/0697948c-cc97-45b0-b48c-51f60594073d/public_url" target="_blank" rel="noopener noreferrer" class="view-cert-btn">
+            View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Google App Dev Environment Skill Badge -->
+      <div class="cert-card">
+        <div class="cert-icon google"><i class="fa-brands fa-google"></i></div>
+        <div class="cert-info">
+          <h3>Set Up App Dev Environment</h3>
+          <p class="cert-issuer">Google Cloud • Skill Badge</p>
+          <span class="cert-date"><i class="fa-regular fa-calendar"></i> Issued Jan 2026</span>
+          <a href="https://www.credly.com/badges/9b478647-7e1e-42cf-852a-5f126c8631f9" target="_blank" rel="noopener noreferrer" class="view-cert-btn">
+            View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Google Build a Website Skill Badge -->
+      <div class="cert-card">
+        <div class="cert-icon google"><i class="fa-brands fa-google"></i></div>
+        <div class="cert-info">
+          <h3>Build a Website on Google Cloud</h3>
+          <p class="cert-issuer">Google Cloud • Skill Badge</p>
+          <span class="cert-date"><i class="fa-regular fa-calendar"></i> Issued Jan 2026</span>
+          <a href="https://www.credly.com/badges/e9676a32-eba4-4e73-9f45-f25291451a6b" target="_blank" rel="noopener noreferrer" class="view-cert-btn">
+            View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Google BeyondCorp Security Skill Badge -->
+      <div class="cert-card">
+        <div class="cert-icon google"><i class="fa-brands fa-google"></i></div>
+        <div class="cert-info">
+          <h3>Protect Cloud Traffic with BCE Security</h3>
+          <p class="cert-issuer">Google Cloud • Skill Badge</p>
+          <span class="cert-date"><i class="fa-regular fa-calendar"></i> Skill Badge</span>
+          <a href="https://www.credly.com/badges/423bdd3d-c700-48bb-8286-e83ed6f64879" target="_blank" rel="noopener noreferrer" class="view-cert-btn">
+            View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Google AI Fundamentals -->
+      <div class="cert-card">
+        <div class="cert-icon google"><i class="fa-brands fa-google"></i></div>
+        <div class="cert-info">
+          <h3>AI Fundamentals</h3>
+          <p class="cert-issuer">Google • Coursera</p>
+          <span class="cert-date"><i class="fa-regular fa-calendar"></i> Issued Jul 2026</span>
+          <a href="https://coursera.org/share/7063946505977e02824b758472be1df7" target="_blank" rel="noopener noreferrer" class="view-cert-btn">
+            View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Google AI for Research and Insights -->
+      <div class="cert-card">
+        <div class="cert-icon google"><i class="fa-brands fa-google"></i></div>
+        <div class="cert-info">
+          <h3>AI for Research and Insights</h3>
+          <p class="cert-issuer">Google • Coursera</p>
+          <span class="cert-date"><i class="fa-regular fa-calendar"></i> Issued Jul 2026</span>
+          <a href="https://coursera.org/share/46316a53ce5d42b6c732511137597d16" target="_blank" rel="noopener noreferrer" class="view-cert-btn">
+            View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Google AI for Writing and Communicating -->
+      <div class="cert-card">
+        <div class="cert-icon google"><i class="fa-brands fa-google"></i></div>
+        <div class="cert-info">
+          <h3>AI for Writing and Communicating</h3>
+          <p class="cert-issuer">Google • Coursera</p>
+          <span class="cert-date"><i class="fa-regular fa-calendar"></i> Issued Jul 2026</span>
+          <a href="https://coursera.org/share/d918bf7d5832795c06b0948855030261" target="_blank" rel="noopener noreferrer" class="view-cert-btn">
+            View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Google AI for Brainstorming and Planning -->
+      <div class="cert-card">
+        <div class="cert-icon google"><i class="fa-brands fa-google"></i></div>
+        <div class="cert-info">
+          <h3>AI for Brainstorming and Planning</h3>
+          <p class="cert-issuer">Google • Coursera</p>
+          <span class="cert-date"><i class="fa-regular fa-calendar"></i> Issued Jul 2026</span>
+          <a href="https://coursera.org/share/d9e965398e2106e5ee9675b9c5a63d81" target="_blank" rel="noopener noreferrer" class="view-cert-btn">
+            View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- AI Automation with Claude -->
+      <div class="cert-card">
+        <div class="cert-icon AI"><i class="fa-solid fa-robot"></i></div>
+        <div class="cert-info">
+          <h3>AI Automation with Claude</h3>
+          <p class="cert-issuer">Advancing Women in Tech</p>
+          <span class="cert-date"><i class="fa-regular fa-calendar"></i> Issued Jun 2026</span>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="view-cert-btn">
+            View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Cornell Leadership Certificate -->
+      <div class="cert-card">
+        <div class="cert-icon cornell"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div class="cert-info">
+          <h3>Mexoxo Take the Lead Certificate</h3>
+          <p class="cert-issuer">Cornell University</p>
+          <span class="cert-date"><i class="fa-regular fa-calendar"></i> Issued May 2026</span>
+          <a href="https://mycredentials.ecornell.cornell.edu/credential/TxBdfnfOCU" target="_blank" rel="noopener noreferrer" class="view-cert-btn">
+            View Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section class="section" id="skills">
+    <h2 class="section-title">&lt; Technical Skills /&gt;</h2>
+    <div class="skills-container">
+      <div class="skill-group">
+        <span>Frontend & Full-Stack Development (React / HTML / CSS / JS)</span>
+        <div class="progress-bar"><div class="progress" data-width="90%"></div></div>
+      </div>
+      <div class="skill-group">
+        <span>Python & Machine Learning (PyTorch / Scikit-Learn / Pandas)</span>
+        <div class="progress-bar"><div class="progress" data-width="85%"></div></div>
+      </div>
+      <div class="skill-group">
+        <span>Backend & API Engineering (FastAPI / SQL / OOP / DSA)</span>
+        <div class="progress-bar"><div class="progress" data-width="88%"></div></div>
+      </div>
+      <div class="skill-group">
+        <span>Cloud & Infrastructure (AWS / GCP / Cisco Networking)</span>
+        <div class="progress-bar"><div class="progress" data-width="80%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <h2 class="section-title">&lt; Get In Touch /&gt;</h2>
+    <div class="contact-box">
+      <p>Interested in collaborating or discussing software engineering roles? Feel free to reach out!</p>
+      <div class="contact-links">
+        <a href="mailto:faiqaabid422@gmail.com" class="contact-btn"><i class="fa-solid fa-envelope"></i> Email Me</a>
+        <a href="https://linkedin.com/in/faiqa-abid" target="_blank" class="contact-btn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/L1S23BSCS0119" target="_blank" class="contact-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript Modules -->
+  <script src="canvas.js"></script>
+  <script src="terminal.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
